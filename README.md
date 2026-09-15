@@ -119,3 +119,58 @@ Quick BI 仪表板截图(放置于 dashboard/ 目录)：
 
 ![可视化看板_1](Dashboard/overview_1.png)
 ![可视化看板_2](Dashboard/overview_2.png)
+
+## 成本说明
+
+[详见](docs/cost.md)
+
+- 数据存储：OSS 20GB，新用户 90 天体验版，约 0.3 元
+- MaxCompute：1 亿行数据处理约 1-3 元(一次性)
+- DataWorks 按量付费：约 3-4 元
+- Quick BI 个人版：免费
+- **总计**：50 元以内(注意按量付费，资源用完释放)
+
+## 目录结构
+
+```TEXT
+TB_UserBehavior_Analysis/
+├── README.md
+├── .gitignore
+├── .gitattributes
+├── Dashboard/
+│   ├── overview_1.png
+│   └── overview_2.png
+├── DataWorks/
+│   └── workflow.png
+├── Dataset/
+│   ├── README.md
+│   ├── sample_user_behavior.csv
+│   ├── Data_Exploration/
+│   │   └── data_exploration.ipynb
+│   └── Data_Generator/
+│       └── sample_data.py
+├── Docs/
+|   ├── cost.md
+│   └── metrics_definition.md
+├── Images/
+│   └── architecture.png
+├── SQL/
+│   ├── ODS/
+│   │   └── ods_user_behavior.sql
+│   ├── DW/
+│   │   ├── DWD/
+│   │   │   └── dwd_user_behavior_detail.sql
+│   │   └── DWS/
+│   │       ├── dws_traffic_metrics_daily.sql
+│   │       ├── dws_funnel_metrics_daily.sql
+│   │       ├── dws_retention_metrics_daily.sql
+│   │       ├── dws_repurchase_metrics.sql
+│   │       ├── dws_user_rfm_segment.sql
+│   │       └── dws_item_top_metrics_daily.sql
+│   └── ADS/
+│       ├── ads_user_behavior_daily_summary.sql
+│       ├── ads_user_rfm_daily_summary.sql
+│       └── ads_item_top50_daily.sql
+└── Language_Advancement/
+    └── SQL_Advancement_GROUPING_SETS.md
+```
