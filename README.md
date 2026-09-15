@@ -122,7 +122,7 @@ Quick BI 仪表板截图(放置于 dashboard/ 目录)：
 
 ## 成本说明
 
-[详见](docs/cost.md)
+[详见](Docs/cost.md)
 
 - 数据存储：OSS 20GB，新用户 90 天体验版，约 0.3 元
 - MaxCompute：1 亿行数据处理约 1-3 元(一次性)
