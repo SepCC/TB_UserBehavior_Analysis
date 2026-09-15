@@ -1,0 +1,29 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# 日志与临时文件
+*.log
+*.tmp
+
+# 敏感配置
+.env
+config.ini
+*accesskey*
+*secret*
+
+# 大数据文件：保留在本地，不提交到 GitHub
+Dataset/UserBehavior.csv.zip
+Dataset/UserBehavior.csv/

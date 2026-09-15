@@ -1,0 +1,12 @@
+# 默认文本自动识别，仓库中统一使用 LF
+* text=auto eol=lf
+
+# Jupyter Notebook 不进行换行符转换
+*.ipynb -text
+
+# 二进制文件
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.drawio -text
